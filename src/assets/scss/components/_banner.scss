@@ -1,0 +1,27 @@
+.banner {
+    &__inner {
+        position: relative;
+    }
+
+    &__content {
+        @include center(both);
+        z-index: 1;
+    }
+
+    &__btn {
+        font-size: rem(20px);
+        color: $white;
+        border: rem(2px) solid $white;
+        padding: rem(11px 30px);
+        text-align: center;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-width: 300px;
+            font-size: rem(56px);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+@import '../../../../node_modules/swiper/swiper';
+@import '../../../../node_modules/swiper/modules/pagination/pagination';
+
+.swiper-pagination-bullet {
+    width: rem(12px);
+    height: rem(12px);
+    border: 1px solid $white;
+    opacity: 1;
+    background-color: transparent;
+
+    &-active {
+        background-color: $primary !important;
+    }
+}

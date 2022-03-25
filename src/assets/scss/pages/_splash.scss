@@ -1,0 +1,134 @@
+.splash {
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	&__content {
+		@include flex-center();
+		flex-direction: column;
+		height: 100%;
+
+		& > a,
+		& > img {
+			margin-bottom: 30px;
+
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 80px;
+			}
+		}
+
+        & > img {
+            margin-bottom: 10px;
+        }
+	}
+
+	&__form {
+		max-width: 530px;
+		@include flex-center(align-center);
+		flex-direction: column;
+
+		&--info {
+			margin-bottom: 25px;
+			@include media-breakpoint-down(lg) {
+				padding: 0 25px;
+			}
+		}
+
+		.btn-solid-tertiary {
+			margin-top: 25px;
+			height: 38px;
+			width: 100px;
+			letter-spacing: 1.2px;
+			font-size: 16px;
+		}
+	}
+
+    &__logo {
+        &-main {
+            margin-bottom: rem(14px);
+            mix-blend-mode: multiply;
+        }
+    }
+}
+
+.kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1
+	.ql-editor.ql-editor.ql-editor {
+	max-width: 540px;
+}
+.kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1.kl-private-quill-wrapper-Lkqws1
+	.ql-container.ql-container.ql-container
+	p {
+	font-family: $font-family-primary;
+	color: $white;
+	text-align: center !important;
+	font-size: 15px !important;
+	line-height: 20px !important;
+}
+.klaviyo-form {
+	.kl-private-reset-css-Xuajs1 {
+		align-items: center !important;
+
+		input[type='email'] {
+			font-family: $font-family-primary !important;
+			width: 335px;
+			border: none !important;
+			padding: 10px 5px !important;
+			text-align: center !important;
+			font-size: 16px !important;
+			font-weight: 500 !important;
+			letter-spacing: 0.8px !important;
+			background-color: $black-200 !important;
+			border-radius: 0 !important;
+			height: 42px !important;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 18px !important;
+			}
+
+			@include placeholder() {
+				font-family: $font-family-primary !important;
+				font-size: 16px !important;
+				font-weight: 500 !important;
+				letter-spacing: 0.8px !important;
+				color: rgba($color: #313131, $alpha: 0.25);
+
+				@include media-breakpoint-up(lg) {
+					font-size: 18px !important;
+				}
+			}
+		}
+
+		&[type='button'] {
+			font-family: 'Circular Std', sans-serif  !important;
+			font-size: 16px !important;
+			line-height: 15px  !important;
+			font-weight: 500  !important;
+			padding: 0.5rem 1rem;
+			height: 1.875rem  !important;
+			transition: all 0.2s ease-in-out;
+			text-transform: uppercase;
+			border: 1px solid transparent;
+			text-align: center;
+            background-color: #313131 !important;
+            color: #CECECE !important;
+            border-radius: 6px;
+            height: 38px  !important;
+            width: 115px  !important;
+            letter-spacing: 1.2px  !important;
+            display: inline-block  !important;
+            box-sizing: border-box;
+            
+
+            @include media-breakpoint-up(lg) {
+                font-size: 16px  !important;
+                line-height: 1.375rem  !important;
+                letter-spacing: 0.04688rem  !important;
+                padding-left: 1.25rem  !important;
+                padding-right: 1.25rem !important;
+                height: 2.375rem !important;
+            }
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.footer {
+	padding: rem(54px 0);
+	background-color: $black;
+	text-align: center;
+
+	.container {
+		max-width: rem(1440px);
+	}
+
+	&-widget {
+		grid-template-columns: 1fr 1fr 1fr 1fr 24.6809%;
+		text-align: left;
+		margin-top: rem(88px);
+
+		&__title {
+			font-size: rem(14px);
+			line-height: rem(17px);
+			color: $white;
+
+			margin-bottom: rem(40px);
+		}
+	}
+
+	&-nav {
+		&__item {
+			margin-top: rem(10px);
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		&__link {
+			font-size: rem(14px);
+			line-height: rem(17px);
+			color: $white;
+		}
+	}
+
+	&-newsletter {
+		&__desc {
+			font-size: rem(14px);
+			line-height: rem(17px);
+			color: $white;
+		}
+
+		&__form {
+			margin-top: rem(38px);
+			position: relative;
+
+			&-control {
+				@include placeholder-color($white);
+				width: 100%;
+				font-size: rem(14px);
+				line-height: rem(17px);
+				color: $white;
+				padding: rem(5px 30px 5px 0);
+				background-color: transparent;
+				border: none;
+				border-bottom: 2px solid $white;
+			}
+
+			.mail-icon {
+				width: rem(24px);
+				height: rem(16px);
+				border: none;
+				background-color: transparent;
+				top: rem(6px);
+				right: rem(5px);
+				padding:0;
+				position:absolute;
+			}
+		}
+	}
+	
+	&-social {
+		margin-top: rem(34px);
+		color: $white;
+	}
+}

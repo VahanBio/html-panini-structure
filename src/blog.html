@@ -1,0 +1,57 @@
+---
+layout: default
+title: Boran and Raisd | Blog
+---
+
+<section class="blog-hero">
+    <picture class="blog-hero__bg">
+        <img class="object-cover" src="./assets/images/blog-hero-bg.png" alt="">
+    </picture>
+    <div class="blog-hero__content">
+        <picture class="blog-hero__img">
+            <img src="./assets/images/blog-hero-img.png" alt="">
+        </picture>
+        <h2 class="blog-hero__title">blog</h2>
+    </div>
+</section>
+
+<div class="blog">
+    <div class="blog__top">
+        {{> sectionHeader title="ONLY THE FINEST" description="Established in 1931, Born & Raised is a 3rd generation butcher committed to highest quality meat produce. We have
+            gained a reputation for fabulous meat both locally and nationally. In f act we’re so proud of our products, we’ll personal-
+            ly guarantee it." }}
+        <div class="text-center blog__actions">
+            <select class="select" name="recipe-filter" id="recipe-filter">
+                <option value="All">All</option>
+                <option value="recipe-1">recipe-1</option>
+                <option value="recipe-2">recipe-2</option>
+                <option value="recipe-3">recipe-3</option>
+                <option value="recipe-4">recipe-4</option>
+            </select>
+        </div>
+    </div>
+    <div class="blog__row">
+        <div class="container">
+            <div class="d-lg-grid blog__grid">
+                {{#each articles.postsTop }}
+                {{> article ImgPathDesktop=this.imageUrl ArticleDate=this.date ArticleTitle=this.title ArticleDescription=this.description ArticleDescription-2=this.description-2}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="blog__row blog__row_bottom">
+        <picture class="blog__bg">
+            <source media="(min-width: 992px)" src="./assets/images/article-bg.png">
+            <source media="(max-width: 991.98px)" src="./assets/images/article-bg.png">
+            <img class="object-cover" src="./assets/images/article-bg.png" alt="recipe-img">
+        </picture>
+        <div class="container">
+            <div class="d-lg-grid blog__grid">
+                {{#each articles.postsBottom }}
+                {{> article ImgPathDesktop=this.imageUrl ArticleDate=this.date ArticleTitle=this.title ArticleDescription=this.description ArticleDescription-2=this.description-2  }}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+  
+</div>

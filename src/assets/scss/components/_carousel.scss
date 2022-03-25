@@ -1,0 +1,68 @@
+//carousel
+.carousel {
+    margin-top: rem(18px);
+
+    &__slide {
+        position: relative;
+    }
+
+    &__content {
+        @include center('vertical');
+        right: rem(30px);
+        z-index: 1;
+
+        &-block {
+            position: relative;
+            padding: rem(44px);
+            max-width: 690px;
+            background-color: #242424;
+            border: 1px solid $white;
+            color: $white-light;
+
+            &::after {
+                position: absolute;
+                top: rem(-18px);
+                right: rem(-18px);
+                bottom: rem(-18px);
+                left: rem(-18px);
+                z-index: -1;
+                background-color: rgba($color: #242424, $alpha: 0.84);
+                content: '';
+            }
+
+            p+p {
+                margin-top: rem(20px);
+            }
+        }
+
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__sub-title {
+        @include text(rem(20px), rem(27px), $red-900, 500, null, $font-family-primary);
+        font-style: italic;
+        margin: rem(26px 0 30px);
+    }
+
+    &__link {
+        margin-top: rem(40px);
+    }
+
+    .swiper-button {
+        position: absolute;
+        bottom: rem(206px);
+        z-index: 1;
+    }
+
+    .swiper-button__prev {
+        left: rem(290px);
+        transform: rotate(180deg);
+    }
+
+    .swiper-button__next {
+        right: rem(290px);
+    }
+}

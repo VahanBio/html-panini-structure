@@ -1,0 +1,45 @@
+<aside class="cart">
+    <div class="d-flex flex-column cart__inner">
+        <div class="d-flex align-items-center cart__header">
+            <button class="cart__close-btn" type="button">
+                <svg width="31" height="31">
+                    <use xlink:href="./assets/svgs/symbol/svg/sprite.symbol.svg#close"></use>
+                </svg>
+            </button>
+            <a href="#" class="d-flex align-items-center cart-user">
+                <span class="cart-user__text">my account</span>
+                <svg class="cart-user__icon" width="28" height="30">
+                    <use xlink:href="./assets/svgs/symbol/svg/sprite.symbol.svg#user"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="cart__body">
+            <div class="cart__item">
+                <picture class="cart__img">
+                    <source media="(min-width: 992px)" srcset="/assets/images/sidebar-img.jpg">
+                    <source media="(max-width: 991.98px)" srcset="/assets/images/sidebar-img.jpg">
+                    <img src="/assets/images/sidebar-img.jpg" alt="Say Hi, skin." width="226" height="226">
+                </picture>
+                <div class="d-flex align-items-center cart-info">
+                    <div class="cart-info__text">
+                        <h5 class="cart-info__title">FILET MIGNON</h5>
+                        <p class="cart-info__desc">2 Pack (400g)</p>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary">REMOVE</a>
+                </div>
+                <p class="cart__price">$38.00</p>
+                <div class="cart-quantity">
+                    <input type="number" class="cart-quantity__input" value="1" min="0">
+                </div>
+                <div class="d-flex align-items-center cart-total">
+                    <p class="cart-total__text">SUBTOTAL</p>
+                    <p class="cart-total__price">$38.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart__footer">
+            <a href="#" class="btn btn-secondary">COMPLETE PURCHASE</a>
+            <a href="#" class="btn btn-link">CONTINUE SHOPPING</a>
+        </div>
+    </div>
+</aside>

@@ -1,0 +1,46 @@
+//functions
+@import './global/functions/rem';
+
+//mixins
+@import './global/variables';
+@import './global/mixins';
+@import './global/reset';
+@import './global/functions/utilizes';
+@import './global/typography';
+@import './global/base';
+
+//lazy
+@import './global/lazy';
+
+@import './global/swiper';
+
+//selectric
+@import 'jquery-selectric/src/selectric.scss';
+
+// Components
+@import './components/buttons';
+@import './components/promotion';
+@import './components/social';
+@import './components/header';
+@import './components/nav';
+@import './components/cart';
+@import './components/card';
+@import './components/swiper';
+@import './components/banner';
+@import './components/carousel';
+@import './components/selectric';
+@import './components/blog';
+@import './components/footer';
+
+
+//sections
+@import './sections/hero';
+
+//pages
+@import './pages/shop';
+@import './pages/recipes';
+@import './pages/home';
+@import './pages/faq';
+@import './pages/single-blog';
+@import './pages/pdp';
+@import './pages/splash';
