@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import 'jquery-selectric';
 import LazyLoad from 'vanilla-lazyload';
 
 import Slider from './modules/_swiper';
@@ -17,12 +16,6 @@ $(document).ready(() => {
 	slider.initHpSlider();
 	slider.initTestimonialSlider();
 	slider.initMoreRecipeCarousel();
-
-	$('.select').selectric({
-		disableOnMobile: false,
-		nativeOnMobile: false,
-		maxHeight: 200,
-	});
 
 	new Accordion({
 		ele: '.faq-panel',

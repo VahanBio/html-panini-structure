@@ -7,7 +7,6 @@ $black-200: #EEECEA !default;
 $black-500: #313131 !default;
 
 //gray
-
 $gray-100: #f8f8f8 !default;
 $gray-200: #ececec !default;
 $gray-300: #f2f2f2 !default;
@@ -39,8 +38,8 @@ $tertiary: $ecru-white;
 
 $bodyText: $black;
 
-$border-primary: rem(1px) solid $primary;
-$outline-primary: rem(1px) solid $primary;
+$border-primary: 1px solid $primary;
+$outline-primary: 1px solid $primary;
 
 //only colors
 $colors: (
@@ -56,12 +55,12 @@ $font-family-secondary: 'Recife Display', sans-serif !default;
 
 $body-font: $font-family-primary;
 
-$base-font-size: rem(16px);
-$base-font-size-m: rem(14px);
+$base-font-size: 16px;
+$base-font-size-m: 14px;
 $base-line-height: normal;
 $base-letter-spacing: normal;
 
-$base-radius: rem(4px);
+$base-radius: 4px;
 
 $extra-large-font: 10rem !default;
 $extra-large-font-m: 4.5rem !default;
@@ -84,19 +83,19 @@ $media-break-points: (
 //space
 $space: (
 	'0': 0,
-	'1': rem(4px),
-	'2': rem(8px),
-	'3': rem(12px),
-	'4': rem(16px),
-	'5': rem(20px),
-	'6': rem(24px),
-	'7': rem(28px),
-	'8': rem(32px),
-	'9': rem(36px),
-	'10': rem(40px),
-	'11': rem(44px),
-	'12': rem(48px),
-	'13': rem(52px),
-	'14': rem(56px),
-	'15': rem(60px),
+	'1': 4px,
+	'2': 8px,
+	'3': 12px,
+	'4': 16px,
+	'5': 20px,
+	'6': 24px,
+	'7': 28px,
+	'8': 32px,
+	'9': 36px,
+	'10': 40px,
+	'11': 44px,
+	'12': 48px,
+	'13': 52px,
+	'14': 56px,
+	'15': 60px,
 ) !default;
