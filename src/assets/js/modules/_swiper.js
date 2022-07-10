@@ -10,18 +10,17 @@ export default class Slider {
                 nextEl: '.more-recipe__nav-next',
                 prevEl: '.more-recipe__nav-prev',
             },
-
             breakpoints: {
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 2
                 },
                 992: {
-                    slidesPerView: 3,
+                    slidesPerView: 3
                 },
                 1200: {
-                    slidesPerView: 4,
-                },
-            },
-        });
+                    slidesPerView: 4
+                }
+            }
+        })
     }
 }
