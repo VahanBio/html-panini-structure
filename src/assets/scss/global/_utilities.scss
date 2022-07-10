@@ -1,0 +1,75 @@
+.object-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dis-scroll {
+    overflow: hidden;
+    @include media-breakpoint-up(lg) {
+	padding-right: 8px;
+    }
+    @include media-breakpoint-down(lg) {
+	position: relative;
+	touch-action: none;
+	-ms-touch-action: none;
+	height: 100%;
+    }
+}
+
+// Extends
+%page-scrollbar {
+    &::-webkit-scrollbar {
+	height: 0;
+	width: 8px;
+
+	&-track {
+	    background-color: gray;
+	    border-radius: 100px;
+	}
+
+	&-thumb {
+	    border-radius: 100px;
+	    background-color: $secondary-primary;
+	    transition: background-color .5s ease-in-out;
+
+	    &:hover {
+		background-color: $primary;
+	    }
+	}
+    }
+}
+
+%btn-reset, .btn-reset {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+%input-reset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+%textarea-reset {
+    border: none;
+    background-color: transparent;
+    resize: none;
+}
+
+%disable-scrollbar {
+    &::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+
+	&-track {
+	    background-color: transparent;
+	}
+
+	&-thumb {
+	    background-color: transparent;
+	}
+    }
+}

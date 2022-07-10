@@ -1,11 +1,7 @@
 @import "mixins/breakpoint",
 "mixins/center",
-"mixins/flex",
 "mixins/fonts",
-"mixins/grid",
-"mixins/placeholder",
-"mixins/buttons",
-"mixins/custom-fonts";
+"mixins/placeholder";
 
 @function mat-color($palette, $hue: default, $opacity: null) {
 
@@ -43,7 +39,7 @@ $default-pixel: 16;
         padding-top: ($height / $width) * 100%;
     }
 
-    >* {
+    > * {
         position: absolute;
         top: 0;
         left: 0;
@@ -57,4 +53,51 @@ $default-pixel: 16;
     opacity: $value;
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity='+ $IEValue + ')';
     filter: alpha(opacity=$IEValue);
+}
+
+@mixin resizable($direction) {
+    overflow: auto; // Per CSS3 UI, `resize` only applies when `overflow` isn't `visible`
+    resize: $direction; // Options: horizontal, vertical, both
+}
+
+@mixin img-fluid {
+    // Keep images from scaling beyond the width of their parents.
+    // Part 1: Set a maximum relative to the parent
+    max-width: 100%;
+    // Part 2: Override the height to auto, otherwise images will be stretched
+    // when setting a width and height attribute on the img element.
+    height: auto;
+}
+
+@mixin text-truncate() {
+    // Text truncate
+    // Requires inline-block or block for proper styling
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin vertical-text() {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    //text-orientation: upright;
+    //text-orientation: sideways-right;
+    //text-orientation: sideways;
+    //text-orientation: use-glyph-orientation;
+}
+
+// Flex Center Alignment
+@mixin flex-center($alignment: "") {
+    @if unquote($alignment) == "align-center" {
+        display: flex;
+        align-items: center;
+    } @else if unquote($alignment) == "justify-center" {
+        display: flex;
+        justify-content: center;
+    } @else {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

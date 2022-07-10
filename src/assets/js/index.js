@@ -2,19 +2,14 @@ import $ from 'jquery';
 import LazyLoad from 'vanilla-lazyload';
 
 import Slider from './modules/_swiper';
-import Accordion from './modules/_accordion';
-import Pdp from "./modules/_pdp";
+import Accordion from './components/_accordion';
 
 const slider = new Slider();
 
 $(document).ready(() => {
-
 	new LazyLoad();
-	new Pdp();
 
 	//home slider
-	slider.initHpSlider();
-	slider.initTestimonialSlider();
 	slider.initMoreRecipeCarousel();
 
 	new Accordion({
@@ -23,10 +18,5 @@ $(document).ready(() => {
 		accBody: '.faq-panel__body',
 		activeClass: 'faq-panel-panel--open',
 		showOne: true,
-	});
-
-	$(document).on('click', '.faq-panel__close', function () {
-		$(this).parents('.faq-panel__body').slideUp();
-		$(this).parents('.faq-panel').removeClass('faq-panel-panel--open');
 	});
 });
